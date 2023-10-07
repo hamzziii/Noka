@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoKa 3 | News</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/logo.png">
+    <!-- Link css -->
+    <link rel="stylesheet" href="../css/News.css">
+    <link rel="stylesheet" href="../css/NAVBAR.css">
+    <link rel="stylesheet" href="../css/Footer.css">
+    <!-- Link Font   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Josefin Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+    <!-- Link Icon -->
+    <script src="https://kit.fontawesome.com/4dad1e0fea.js" crossorigin="anonymous"></script>
+    <!-- Link Js -->
+    <script defer src="../script/NAVBAR.js"></script>
+    <script defer src="../script/slider.js"></script>
+</head>
+
+<body>
+    <header class="sticky">
+        <!-- NAVBAR -->
+        <div class="NavigationBar">
+
+            <!-- SideBar -->
+            <div id="sidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+                <a href="index.html">Home</a>
+                <a href="Heroes.html">Heroes</a>
+                <a href="Esport.html">E-Sport</a>
+                <a href="News.html">News</a>
+                <a href="Register.html">Register Now</a>
+            </div>
+
+            <!-- Burger -->
+            <div id="main">
+                <button class="Open" onclick="openSidebar()">☰</button>
+            </div>
+
+            <!-- Header -->
+            <div class="nav Navigation">
+                <a id="LOGO" class="black">NoKa 3</a>
+                <a href="index.html" id="home" class="option black">Home</a>
+                <!-- DropDown -->
+                <div class="dropdown">
+                    <div class="DropButton">
+                        <p class="black">Discover <i class="fa-solid fa-sort-down"></i></p>
+                    </div>
+                    <div class="content">
+                        <ul><a href="heroes.html">Heroes</a></ul>
+                        <ul><a href="ESport.html">E-Sport</a></ul>
+                        <ul><a href="News.html">News</a></ul>
+                    </div>
+                </div>
+                <a href="Register.html" class="register black"><button>Register Now</button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <!-- FEATURED NEWS -->
+    <h4>FEATURED NEWS</h4>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="slide first">
+                <img src="../assets/BAN1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="../assets/BAN2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="../assets/BAN3.png" alt="">
+            </div>
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn" id="manual-btn1"></label>
+            <label for="radio2" class="manual-btn" id="manual-btn2"></label>
+            <label for="radio3" class="manual-btn" id="manual-btn3"></label>
+        </div>
+    </div>
+
+    <!-- NEWS -->
+    <h4 id="news">NEWS</h4>
+    <div class="container">
+        <div class="card">
+            <div class="isi">
+                <h2>The Holy Tower</h2><br>
+                <p>NoKa 3 will release a new turret skin on patch 3.3. The turret has a design with golden white nuances
+                    that makes us feel like we are playing in the royal era. The turret is called "The Holy Tower"
+                    because the turret is predominantly white, which symbolizes holiness or purity. it is said that this
+                    turret is rumored to have a healing effect...</p>
+            </div>
+            <img src="../assets/NEWS1.png">
+        </div>
+        <div class="card">
+            <div class="isi">
+                <h2>Eyes Of Eternity</h2><br>
+                <p>NoKa 3 released the first limited legendary skin for the Oracle hero. What makes this skin special is
+                    that this skin adds Defense hero (+200 HP) and adds 5% damage to skills 1,2, and 3, as well as basic
+                    attacks. hero, when the green aura and red crystal are shining brightly, it means the hero stack is
+                    full and will add 25% damage to the ultimate skill.</p>
+            </div>
+            <img src="../assets/NEWS2.png">
+        </div>
+    </div>
+
+    <div class="container containers" id="contain2">
+        <div class="card">
+            <div class="isi">
+                <h2>NoKa 3 x PUBG</h2><br>
+                <p>In Patch 3.3. NoKa 3 once again has a very interesting surprise for players, NoKa 3 will collaborate
+                    with the Game PlayerUnknown's Battlegrounds or also known by the acronym P.U.B.G. and released
+                    several Epic series P.U.B.G skins with unique and interesting designs. This is one of the leaked
+                    appearances of the Epic series P.U.B.G Hero Luna's skin.</p>
+            </div>
+            <img src="../assets/NEWS3.png">
+        </div>
+        <div class="card">
+            <div class="isi">
+                <h2>Break New Ground</h2><br>
+                <p>In Patch 3.3. NoKa 3 will collaborate with one of the best FPS games in the world, namely
+                    PlayerUnknown's Battleground or known by the acronym P.U.B.G. NoKa 3 will present several game
+                    modes, epic series skins, and new maps. Unfortunately, the date of the
+                    event time period has not<br> been determined</p>
+            </div>
+            <img src="../assets/NEWS4.png">
+        </div>
+    </div>
+
+    <div class="container" id="contain3">
+        <div class="card">
+            <div class="isi">
+                <h2>New Patch Update</h2><br>
+                <p>In Patch 3.3. NoKa 3 fixed some bugs in the system, loading screen and matchmaking will be faster,
+                    NoKa 3 also made some hero adjustments, some heroes are buffed and nerfed, details will be uploaded
+                    later on NoKa 3 social media. NoKa 3 also updated the creep minion design and jungles.</p>
+            </div>
+            <img src="../assets/NEWS5.png">
+        </div>
+        <div class="card">
+            <div class="isi">
+                <h2>Fanart Competition</h2><br>
+                <p>NoKa 3 will hold a fanart challenge with the theme "Conquer New Ground" on 12 July to 28 July, the
+                    winner will get an ingame prize of 300 diamonds and a limited legendary skin, the winner will be
+                    announced via NoKa 3 social media and the results will also be posted on social media NoKa 3.</p>
+            </div>
+            <img src="../assets/NEWS6.png">
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-area">
+        <div class="footer-sep"></div>
+        <div class="footer-wrapper">
+            <div class="footer-content footer-left">
+                <div class="footer-logo">
+                    <img src="../assets/logo.png">
+                </div>
+                <div class="socmed-icons">
+                    <a href="https://www.facebook.com" target=" _blank" rel="noopener noreferrer"
+                        class="fb fab fa-facebook">
+                    </a>
+                    <a href="https://www.instagram.com" target=" _blank" rel="noopener noreferrer"
+                        class="ig fab fa-instagram">
+                    </a>
+                    <a href="https://www.twitter.com" target=" _blank" rel="noopener noreferrer"
+                        class="tw fab fa-twitter">
+                    </a>
+                    <a href="https://www.snapchat.com" target=" _blank" rel="noopener noreferrer"
+                        class="sn fab fa-snapchat">
+                    </a>
+                    <a href="https://www.youtube.com" target=" _blank" rel="noopener noreferrer"
+                        class="yt fab fa-youtube">
+                    </a>
+                    <a href="https://store.steampowered.com" target=" _blank" rel="noopener noreferrer"
+                        class="st fab fa-steam">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-content footer-right">
+                <div>
+                    <span onclick="console.log('Clicked');">ABOUT</span>
+                    <span onclick="console.log('Clicked');">PRIVACY</span>
+                    <span onclick="console.log('Clicked');">CONTACT</span>
+                </div>
+                <div class="creator-credit">&copy;2022 All Right Reserved<br>
+                    Developed by Celine Paulsaeman n' Steffi Tania
+                </div>
+            </div>
+        </div>
+        <div class="disclaimer">NOKA3 IS NOT AFFILIATED, AUTHORIZED, LICENSED, OR ENDORSED BY DOTA 2 OR
+            VALVE CORPORATION. ANY ASSOCIATED LOGOS ARE TRADEMARKS OF VALVE CORPORATION.
+        </div>
+    </div>
+
+    <!-- Link Font -->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

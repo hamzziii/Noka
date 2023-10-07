@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Link css -->
+    <link href="../css/Home.css" rel="stylesheet">
+    <link href="../css/NAVBAR.css" rel="stylesheet">
+    <link href="../css/Footer.css" rel="stylesheet">
+    <!-- Link javascript -->
+    <script defer src="../script/NAVBAR.js"></script>
+    <title>NoKa 3 | Home</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/logo.png">
+</head>
+
+<body>
+    <header class="sticky">
+        <!-- NAVBAR -->
+        <div class="NavigationBar">
+
+            <!-- SideBar -->
+            <div id="sidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+                <a href="index.html">Home</a>
+                <a href="Heroes.html">Heroes</a>
+                <a href="Esport.html">E-Sport</a>
+                <a href="News.html">News</a>
+                <a href="Register.html">Register Now</a>
+            </div>
+
+            <!-- Burger -->
+            <div id="main">
+                <button class="Open" onclick="openSidebar()">☰</button>
+            </div>
+
+            <!-- Header -->
+            <div class="nav Navigation">
+                <a id="LOGO" class="black">NoKa 3</a>
+                <a href="index.html" id="home" class="option black">Home</a>
+                <!-- DropDown -->
+                <div class="dropdown">
+                    <div class="DropButton">
+                        <p class="black">Discover <i class="fa-solid fa-sort-down"></i></p>
+                    </div>
+                    <div class="content">
+                        <ul><a href="heroes.html">Heroes</a></ul>
+                        <ul><a href="ESport.html">E-Sport</a></ul>
+                        <ul><a href="News.html">News</a></ul>
+                    </div>
+                </div>
+                <a href="Register.html" class="register black"><button>Register Now</button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+        <section class="banner banner1">
+            <div class="container">
+                <video autoplay muted loop id="myVideo">
+                    <source src="../video/bgMain.mp4" type="video/mp4">
+                </video>
+                <div class="text">
+                    <h1>NoKa 3</h1>
+                    <h3>A Modern Multiplayer Masterpiece</h3>
+                    <a href="Register.html" class="btn">Register Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOGO -->
+        <section class="sec1">
+            <div class="container">
+                <div class="sec1-inner">
+                    <img src="../assets/logo.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US -->
+        <section class="sec2 left-right-sec section1" style="transition: 2s;">
+            <div class="container">
+                <div class="sec2-inner">
+                    <div class="img imgapus">
+                        <div class="img"><img src="../assets/banner.png" alt=""></div>
+                    </div>
+                    <div class="text">
+                        <div class="text-inner">
+                            <h2>About Us</h2>
+                            <p>NoKa 3 is a multiplayer online battle arena (MOBA) video game. NoKa 3 is played in
+                                matches between two teams of five players, with each team occupying and defending their
+                                own separate base on the map. Each of the ten players independently controls a powerful
+                                character known as a "hero" that all have unique abilities and differing styles of play.
+                                During a match players collect experience points and items for their heroes to
+                                successfully defeat the opposing team's heroes in player versus player combat. A team
+                                wins by being the first to destroy the other team's "Ancient", a large structure located
+                                within their base.</p>
+                            <!-- TAMBAHIN READ MORE -->
+                            <div class="img img2" id="heroes">
+                                <div class="img"><img src="../assets/banner.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWS -->
+        <section class="sec2 left-right-sec section2">
+            <div class="container">
+                <div class="sec2-inner">
+                    <div class="text">
+                        <div class="text-inner">
+                            <h2>Join The Battle of The Ancients</h2>
+                            <p>Every day, millions of players worldwide enter the battle as one of over a hundred NoKa
+                                Heroes in a 5v5 team clash. NoKa 3 is the deepest multi-player action RTS game ever made
+                                and there's always a new strategy or tactic to discover. It's completely free to play
+                                and always will be – start defending your ancient now.</p>
+                            <div class="img img2">
+                                <div class="img"><img src="../assets/pakeee.png" alt=""></div>
+                            </div>
+                            <a href="../html/News.html" class="btn button">See What's New</a>
+                        </div>
+                    </div>
+                    <div class="img imgapus">
+                        <div class="img"><img src="../assets/pakeee.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HEROES -->
+        <section class="banner banner2">
+            <div class="container">
+                <div class="HeroesText">
+                    <h1>Who Will You Choose?</h1>
+                    <h3>From magical tacticians to fierce brutes and cunning rogues, NoKa 3's hero pool is massive and
+                        limitlessly diverse.
+                        Unleash incredible abilities and devastating ultimates on your way to victory.</h3>
+                    <a href="../html/heroes.html" class="btn">View All Heroes</a>
+                </div>
+            </div>
+        </section>
+        <!-- SLIDER -->
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="../assets/luna.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../assets/oracle.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../assets/doom_bringer.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../assets/timbersaw.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../assets/invoker.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../assets/spectre.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../assets/luna.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../assets/oracle.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../assets/doom_bringer.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- ESPORT -->
+        <section class="sec2 left-right-sec section3">
+            <div class="container">
+                <div class="sec2-inner">
+                    <div class="img imgapus">
+                        <div class="img"><img src="../assets/Champion.jpg" alt=""></div>
+                    </div>
+                    <div class="text">
+                        <div class="text-inner">
+                            <h2>The NoKa Pro Circuit</h2>
+                            <p>When not climbing the ranks, you'll be able to learn from the best. The NoKa Pro Circuit
+                                features ultra-high-level NoKa 3 competition streaming regularly in the game client, on
+                                Twitch and Steam.TV. Culminating in the largest e-sports championship in the world, The
+                                International, professional NoKa 3 is an event not to be missed.</p>
+                            <div class="img img2">
+                                <div class="img"><img src="../assets/Champion.jpg" alt=""></div>
+                            </div>
+                            <a href="../html/ESport.html" class="btn button">See All Matches</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <div class="footer-area">
+            <div class="footer-sep"></div>
+            <div class="footer-wrapper">
+                <div class="footer-content footer-left">
+                    <div class="footer-logo">
+                        <img src="../assets/logo.png">
+                    </div>
+                    <div class="socmed-icons">
+                        <a href="https://www.facebook.com" target=" _blank" rel="noopener noreferrer"
+                            class="fb fab fa-facebook">
+                        </a>
+                        <a href="https://www.instagram.com" target=" _blank" rel="noopener noreferrer"
+                            class="ig fab fa-instagram">
+                        </a>
+                        <a href="https://www.twitter.com" target=" _blank" rel="noopener noreferrer"
+                            class="tw fab fa-twitter">
+                        </a>
+                        <a href="https://www.snapchat.com" target=" _blank" rel="noopener noreferrer"
+                            class="sn fab fa-snapchat">
+                        </a>
+                        <a href="https://www.youtube.com" target=" _blank" rel="noopener noreferrer"
+                            class="yt fab fa-youtube">
+                        </a>
+                        <a href="https://store.steampowered.com" target=" _blank" rel="noopener noreferrer"
+                            class="st fab fa-steam">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-content footer-right">
+                    <div>
+                        <span onclick="console.log('Clicked');">ABOUT</span>
+                        <span onclick="console.log('Clicked');">PRIVACY</span>
+                        <span onclick="console.log('Clicked');">CONTACT</span>
+                    </div>
+                    <div class="creator-credit">&copy;2022 All Right Reserved<br>
+                        Developed by Celine Paulsaeman n' Steffi Tania
+                    </div>
+                </div>
+            </div>
+            <div class="disclaimer">NOKA3 IS NOT AFFILIATED, AUTHORIZED, LICENSED, OR ENDORSED BY DOTA 2 OR
+                VALVE CORPORATION. ANY ASSOCIATED LOGOS ARE TRADEMARKS OF VALVE CORPORATION.
+            </div>
+        </div>
+
+
+    </main>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</body>
+</html>

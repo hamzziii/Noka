@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* SLIDER */
+.slider {
+    height: 350px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px *18);
+    animation: scroll 20s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translatex(0);
+    }
+
+    100% {
+        transform: translatex(calc(-430px *6));
+    }
+}
+
+.slide {
+    height: 380px;
+    width: 430px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slide img {
+    width: 93%;
+    transition: transform 1s;
+}
+
+.slide img:hover {
+    transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+body {
+    color: #fff;
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Cinzel', serif;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+}
+
+.container {
+    max-width: 1166px;
+    margin: 0 auto;
+}
+
+#myVideo {
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -5;
+}
+
+.banner {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner2 {
+    height: 130vh;
+    background: url(../assets/bgHeroes.png) no-repeat;
+    background-size: contain;
+}
+
+.banner .text {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.banner .HeroesText {
+    text-align: center;
+}
+
+.banner h1 {
+    line-height: 80px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    z-index: 9;
+    margin-top: 50px;
+    transition: all ease 0.5s;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    opacity: .9;
+    z-index: -1;
+    transition: all ease 0.5s;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn:hover:before {
+    top: 0;
+    height: 100%;
+}
+
+/* LOGO */
+.sec1 {
+    position: relative;
+    padding: 80px 0;
+}
+
+.sec1 h3 {
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+.sec1 p {
+    line-height: 32px;
+}
+
+.sec1-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.sec1-inner {
+    justify-content: center;
+}
+
+.sec1-inner img {
+    width: 9%;
+}
+
+.sec1 .text {
+    width: 47%;
+}
+
+.sec1 .text-left {
+    text-align: right;
+}
+
+.sec1 .text-right {
+    text-align: left;
+}
+
+.sec1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #fff, transparent);
+}
+
+.sec1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #fff, transparent);
+}
+
+/* About Us, News, Esport */
+.sec2 {
+    padding: 65px 0 65px;
+    margin: 50px 0 50px;
+}
+
+.sec2 p {
+    line-height: 30px;
+}
+
+.sec2-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec2-inner .img {
+    width: auto;
+}
+
+.sec2-inner .img img {
+    width: 500px;
+}
+
+.img2 {
+    display: none;
+}
+
+.sec2-inner .text {
+    width: 50%;
+    margin-left: -65px;
+    z-index: 9;
+}
+
+.sec2 .text-inner {
+    position: relative;
+    margin: 55px 0 0 190px;
+}
+
+.sec2 .text-inner:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -30px;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #fff);
+}
+
+.left-right-sec:nth-child(even) .text {
+    margin-right: -65px;
+    text-align: right;
+}
+
+.left-right-sec:nth-child(even) .text-inner {
+    margin: 55px 190px 0 0;
+}
+
+.left-right-sec:nth-child(even) .text-inner:before {
+    left: inherit;
+    right: -30px;
+}
+
+.section1 {
+    background: url(../assets/bgaboutus.png) no-repeat;
+    background-size: cover;
+}
+
+.section2 {
+    background: url(../assets/bgNews.jpg) no-repeat;
+    background-size: cover;
+}
+
+.section3 {
+    background: url(../assets/bgEsport.png) no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .img2 {
+        display: contents;
+    }
+
+    #heroes img {
+        padding-top: 15px;
+    }
+
+    .imgapus {
+        display: none;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+
+    .sec2-inner .text {
+        width: 70%;
+        margin-left: 0;
+    }
+
+    .sec2 .text-inner {
+        position: relative;
+        margin: 0;
+    }
+
+    .left-right-sec:nth-child(even) .text-inner {
+        margin: 0;
+    }
+
+    .left-right-sec:nth-child(even) .text {
+        margin-right: 0;
+        text-align: right;
+    }
+
+    .sec2-inner .img img {
+        width: 350px;
+    }
+
+    .text-inner {
+        padding-bottom: 50px;
+    }
+}

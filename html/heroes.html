@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>NoKa 3 | Heroes</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://dafont.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=El Messiri" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- Link Icon -->
+    <script src="https://kit.fontawesome.com/4dad1e0fea.js" crossorigin="anonymous"></script>
+    <!-- Link css -->
+    <link href="../css/NAVBAR.css" rel="stylesheet">
+    <link href="../css/heroes.css" rel="stylesheet">
+    <link href="../css/Footer.css" rel="stylesheet">
+    <!-- Link javascript -->
+    <script defer src="../script/NAVBAR.js"></script>
+    <script defer src="../script/heroes.js"></script>
+</head>
+
+<style>
+    .magical-text {
+        color: #9FD6E7;
+    }
+
+    .pure-text {
+        color: #DB8E00;
+    }
+</style>
+
+<body>
+    <header class="sticky">
+        <!-- NAVBAR -->
+        <div class="NavigationBar">
+
+            <!-- SideBar -->
+            <div id="sidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+                <a href="index.html">Home</a>
+                <a href="Heroes.html">Heroes</a>
+                <a href="Esport.html">E-Sport</a>
+                <a href="News.html">News</a>
+                <a href="Register.html">Register Now</a>
+            </div>
+
+            <!-- Burger -->
+            <div id="main">
+                <button class="Open" onclick="openSidebar()">☰</button>
+            </div>
+
+            <!-- Header -->
+            <div class="nav Navigation">
+                <a id="LOGO" class="black">NoKa 3</a>
+                <a href="index.html" id="home" class="option black">Home</a>
+                <!-- DropDown -->
+                <div class="dropdown">
+                    <div class="DropButton">
+                        <p class="black">Discover <i class="fa-solid fa-sort-down"></i></p>
+                    </div>
+                    <div class="content">
+                        <ul><a href="heroes.html">Heroes</a></ul>
+                        <ul><a href="ESport.html">E-Sport</a></ul>
+                        <ul><a href="News.html">News</a></ul>
+                    </div>
+                </div>
+                <a href="Register.html" class="register black"><button>Register Now</button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <!-- Hero Attribute -->
+    <div class="heroBackFilter"></div>
+    <div class="container">
+        <div class="box">
+            <div class="attributeBar">
+                <div class="attributesContainer" id="viewStr"><img src="../assets/strength.jpg"></div>
+                <div class="attributesContainer" id="viewAgi"><img src="../assets/agility.jpg"></div>
+                <div class="attributesContainer" id="viewInt"><img src="../assets/intelligence.jpg"></div>
+            </div>
+            <div class="heroesContainer">
+                <p class="title">CHOOSE YOUR HEROES</p>
+                <p class="subTitle">From magical tacticians to fierce brutes and cunning rogues, NoKa 3's hero pool is
+                    massive and limitlessly diverse. Unleash incredible abilities and devastating ultimates on your way
+                    to victory.
+                </p>
+                <div class="cardContainer">
+                    <div class="heroesCard int" id="heroOracle">
+                        <img alt="" src="../assets/oracle.png">
+                        <p class="heroesName">Oracle</p>
+                    </div>
+                    <div class="heroesCard agi" id="heroLuna">
+                        <img alt="" src="../assets/luna.jpg">
+                        <p class="heroesName">Luna</p>
+                    </div>
+                    <div class="heroesCard str" id="heroDoom">
+                        <img alt="" src="../assets/doom_bringer.png">
+                        <p class="heroesName">Doom</p>
+                    </div>
+                    <div class="heroesCard str" id="heroTimbersaw">
+                        <img alt="" src="../assets/timbersaw.png">
+                        <p class="heroesName">Timbersaw</p>
+                    </div>
+                    <div class="heroesCard int" id="heroInvoker">
+                        <img alt="" src="../assets/invoker.png">
+                        <p class="heroesName">Invoker</p>
+                    </div>
+                    <div class="heroesCard agi" id="heroSpectre">
+                        <img alt="" src="../assets/spectre.png">
+                        <p class="heroesName">Spectre</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ORACLE -->
+            <div class="heroDetail" id="Oracle">
+                <div class="heroDescription">
+                    <h1 class="title">Oracle</h1>
+                    <p>By carefull combining his intricate abilities, Oracle controls
+                        the destinies of both friend and foe. Shrouding threatened allies with his
+                        false promise, he can grant an ally a few precious moments of protection to destroy
+                        an enemy, or even reverse a grisly fate.
+                    </p>
+                    <div class="heroTopAttributes">
+                        <div class="heroStats">
+                            <p class="hp">HP:&nbsp; 600(+2.3)</p>
+                            <p class="mana">Mana:&nbsp; 387(+1.8)</p>
+                        </div>
+                        <div class="heroAttribute">
+                            <div class="heroAttributeSection">
+                                <img src="../assets/strength.jpg">
+                                <p>20(+2.4)</p>
+                            </div>
+                            <div class="heroAttributeSection">
+                                <img src="../assets/intelligence.jpg">
+                                <p>15(+1.7)</p>
+                            </div>
+                            <div class="heroAttributeSection">
+                                <img src="../assets/agility.jpg">
+                                <p>26(+3.8)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heroImages">
+                    <div class="skill" id="skills1Oracle">
+                        <div>
+                            <h1>FORTUNE'S END</h1>
+                            <p>Gathers Oracle's power into a bolt of scouring energy that, when released,
+                                damages, roots, and purges enemies of buffs in an area around the target.
+                                If target is an ally it will only purge debuffs. The root duration is equal
+                                to the time spent channeling.</p>
+                        </div>
+                        <div class="abilityValue">
+                            <p>ABILITY:&nbsp; Unit Target</p>
+                            <p>AFFECTS:&nbsp; Heroes</p>
+                            <p>DAMAGE TYPE:&nbsp; <span class="magical-text">Magical</span></p>
+                            <p>DAMAGE:&nbsp; 100.0 / 160.0 / 220.0 / 280.0</p>
+                        </div>
+                    </div>
+                    <div class="skill" id="skills2Oracle">
+                        <div>
+                            <h1>FATE'S EDICT</h1>
+                            <p>Oracle enraptures a target, disarming them and granting them
+                                100.0% magic damage resistance. Can be cast on allies and enemies.</p>
+                        </div>
+                        <div class="abilityValue">
+                            <p><span class="description-text">ABILITY:</span> Unit Target</p>
+                            <p>AFFECTS:&nbsp; Heroes</p>
+                            <p>DURATION:&nbsp; 3.5 / 4.0 / 4.5 / 5.0</p>
+                            <p>CAST RANGE:&nbsp; 500.0 / 600.0 / 700.0 / 800.0</p>
+                        </div>
+                    </div>
+                    <div class="skill" id="skills3Oracle">
+                        <div>
+                            <h1>PURIFYING FLAMES</h1>
+                            <p>Burns away impurities, dealing heavy magic damage to the target before causing them to
+                                regenerate health over time. The amount of health regenerated over its duration
+                                exceeds the amount of initial damage. Can be cast on enemies and allies.
+                            </p>
+                        </div>
+                        <div class="abilityValue">
+                            <p>ABILITY:&nbsp; Unit Target</p>
+                            <p>AFFECTS:&nbsp; Heroes</p>
+                            <p>DAMAGE:&nbsp; 90.0 / 180.0 / 270.0 / 360.0</p>
+                            <p>TOTAL HEAL:&nbsp; 99.0 / 198.0 / 297.0 / 396.0</p>
+
+                        </div>
+                    </div>
+                    <div class="skill" id="skills4Oracle">
+                        <div>
+                            <h1>RAIN OF DESTINY</h1>
+                            <p>Brings forth rain on a 650.0 unit area for 10.0 seconds. Enemies standing in the area
+                                receive 50.0 damage per second and have 25.0% reduced heal amplification. Allies heal
+                                50.0 health per second and have 25.0% increased incoming heal amplification</p>
+                        </div>
+                        <div class="abilityValue">
+                            <p>ABILITY:&nbsp; Point Target</p>
+                            <p>DAMAGE TYPE:&nbsp; <span class="magical-text">Magical</span></p>
+                            <p>RADIUS:&nbsp; 650.0</p>
+                            <p>DAMAGE/HEAL PER SECOND:&nbsp; 50.0</p>
+                        </div>
+                    </div>
+                    <div class="heroVideo">
+                        <video autoplay="" class="heroPotrait" id="oracleVideo" loop="" muted preload="auto">
+                            <source src="../video/oracle.webm" type="video/webm">
+                        </video>
+                    </div>
+
+                    <h3>ABILITIES</h3>
+                    <div class="heroSkill">
+                        <img id="skill1Oracle" src="../assets/oracle_fortunes_end.png">
+                        <img id="skill2Oracle" src="../assets/oracle_fates_edict.png">
+                        <img id="skill3Oracle" src="../assets/oracle_purifying_flames.png">
+                        <img id="skill4Oracle" src="../assets/oracle_false_promise.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- LUNA -->
+            <div class="heroDetail" id="Luna">
+                <div class="heroDescription">
+                    <h1 class="title">Luna</h1>
+                    <p>Riding swiftly into battle, Luna tears into her enemies with attacks able to bounce between
+                        targets. When foes threaten, she calls down the power of the moon as a single searing beam
+                        or as a lunar barrage, crushing those who stand against her.</p>
+                    <div class="heroTopAttributes">
+                        <div class="heroStats">
+                            <p class="hp">HP:&nbsp; 620(+2.6)</p>
+                            <p class="mana">Mana:&nbsp; 351(+1.1)</p>
+                        </div>
+                        <div class="heroAttribute">
+                            <div class="heroAttributeSection">
+                                <img src="../assets/strength.jpg">
+                                <p>21(+2.2)</p>
+                            </div>
+                            <div class="heroAttributeSection">
+                                <img src="../assets/agility.jpg">
+                                <p>24(+3.4)</p>
+                            </div>
+                            <div class="heroAttributeSection">
+                                <img src="../assets/intelligence.jpg">
+                                <p>23(+1.9)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heroImages">
+                    <div class="skill" id="skills1Luna">
+                        <div>
+                            <h1>LUCENT BEAM</h1>
+                            <p>Calls a beam of lunar energy down upon an enemy, damaging and briefly stunning them.
+                            </p>
+                        </div>
+                        <div class="abilityValue">
+                            <p>ABILITY:&nbsp; Unit Targer</p>
+                            <p>AFFECTS:&nbsp; Enemy Units</p>
+                            <p>DAMAGE TYPE:&nbsp; <span class="magical-text">Magical</span></p>
+                            <p>STUN DURATION:&nbsp; 0.8</p>
+                            <p>BEAM DAMAGE:&nbsp; 75.0 / 150.0 / 225.0 / 300.0</p>
+                        </div>
+                    </div>
+                    <div class="skill" id="skills2Luna">
+                        <div>
+                            <h1>MOON GLAIVES</h1>
+                            <p>Empowers Luna's glaives, causing her attacks to bounce between enemy units.
+                                Deals less damage with each bounce.
+                            </p>
+                        </div>
+                        <div class="abilityValue">
+                            <p>ABILITY:&nbsp; Passive</p>
+                            <p>BOUNCES RADIUS:&nbsp; 500.0</p>
+                            <p>BOUNCES:&nbsp; 3.0 / 4.0 / 5.0 / 6.0</p>
+                        </div>
+                    </div>
+                    <div class="skill" id="skills3Luna">
+                        <div>
+                            <h1>LUNAR BLESSING</h1>
+                            <p>Increases the attack damage for Luna and nearby allied heroes.
+                                Luna is also blessed with increased vision range at night.</p>
+                        </div>
+                        <div class="abilityValue">
+                            <p>ABILITY:&nbsp; Passive</p>
+                            <p>BLESSING RADIUS:&nbsp; 1200.0</p>
+                            <p>DAMAGE BONUS:&nbsp; 5.0 / 15.0 / 25.0 / 35.0</p>
+                            <p>NIGHT VISION:&nbsp; 250.0 / 500.0 / 750.0 / 1000.0</p>
+                        </div>
+                    </div>
+                    <div class="skill" id="skills4Luna">
+                        <div>
+                            <h1>ECLIPSE</h1>
+                            <p>Showers random nearby enemies with strikes from Luna's current level of Lucent Beam.
+                                These beams do not stun their targets, and there is a maximum number of times that a
+                                single target can be struck. Also turns day into night for 10.0 seconds.</p>
+                        </div>
+                        <div class="abilityValue">
+                            <p>ABILITY:&nbsp; No Target</p>
+                            <p>AFFECTS:&nbsp; Allied Units</p>
+                            <p>DAMAGE TYPE:&nbsp; <span class="magical-text">Magical</span></p>
+                            <p>ECLIPSE DURATION:&nbsp; 2.4 / 4.2 / 6.0</p>
+
+                        </div>
+                    </div>
+                    <div class="heroVideo">
+                        <video autoplay="" class="heroPotrait" loop="" muted preload="auto">
+                            <source src="../video/luna.webm" type="video/webm">
+                        </video>
+                    </div>
+
+                    <h3>ABILITIES</h3>
+                    <div class="heroSkill">
+                        <img id="skill1Luna" src="../assets/luna_lucent_beam.jpg">
+                        <img id="skill2Luna" src="../assets/luna_moon_glaive.jpg">
+                        <img id="skill3Luna" src="../assets/luna_lunar_blessing.png">
+                        <img id="skill4Luna" src="../assets/luna_eclipse.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- DOOM -->
+            <div class="heroDetail" id="Doom">
+                <div class="heroDescription">
+                    <h1 class="title">Doom</h1>
+                    <p>One way or another, Doom shuts down his enemies. Devouring creeps to claim the various skills
+                        they had in life, he can place a lingering silence upon a foe's spells and items with his
+                        ultimate as he torches his foes.</p>
+                    <div class="heroTopAttributes">
+                        <div class="heroStats">
+                            <p class="hp">HP:&nbsp; 680(+2.7)</p>
+                            <p class="mana">Mana:&nbsp; 255(+0.8)</p>
+                        </div>
+                        <div class="heroAttribute">
+                            <div class="heroAttributeSection">
+                                <img src="../assets/strength.jpg">
+                                <p>24(+3.7)</p>
+                            </div>
+                            <div class="heroAttributeSection">
+                                <img src="../assets/agility.jpg">
+                                <p>11(+0.9)</p>
+                            </div>
+                            <div class="heroAttributeSection">
+                                <img src="../assets/intelligence.jpg">
+                                <p>15(+1.7)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heroImages">
+                    <div class="skill" id="skills1Doom">
+                        <div>
+                            <h1>DEVOUR</h1>
+                            <p>Consumes an enemy or neutral creep, acquiring any special abilities that it possessed and
+                                gaining armor temporarily while it digests the creep. If autocast is deactivated, Doom
+                                will not acquire the creep's abilities. Duration is equal to the cooldown.</p>
+                        </div>
+                        <div class="abilityValue">
+                            <p>ABILITY:&nbsp; Unit Target</p>
+                            <p>BONUS GOLD:&nbsp; 50.0 / 100.0 / 150.0 / 200.0</p>
+                            <p>CREEP MAX LEVEL:&nbsp; 4.0 / 5.0 / 6.0 / 6.0</p>
+                        </div>
+                    </div>
+                    <div class="skill" id="skills2Doom">
+                        <div>
+                            <h1>SCORCHED EARTH</h1>
+                            <p>Carpets the nearby earth in flames which damage enemies, while also granting him
+                                increased movement speed.</p>
+                        </div>
+                        <div class="abilityValue">
+                            <p>ABILITY:&nbsp; No Target</p>
+                            <p>DAMAGE TYPE:&nbsp; <span class="magical-text">Magical</span></p>
+                            <p>RADIUS:&nbsp; 600.0</p>
+                            <p>DURATION:&nbsp; 10.0 / 12.0 / 14.0 / 16.0</p>
+                        </div>
+                    </div>
+                    <div class="skill" id="skills3Doom">
+                        <div>
+                            <h1>INFERNAL BLADE
+                            </h1>
+                            <p>Doom swings his burning sword, igniting the enemy. Stuns for 0.6 seconds and applies a
+                                4.0 second burn that deals a base damage plus a percentage of the target's Max HP as
+                                damage per second.</p>
+                        </div>
+                        <div class="abilityValue">
+                            <p>ABILITY:&nbsp; Unit Target</p>
+                            <p>AFFECTS:&nbsp; Enemy Units</p>
+                            <p>BASE BURN DAMAGE:&nbsp; 20.0 / 30.0 / 40.0 / 50.0</p>
+                        </div>
+                    </div>
+                    <div class="skill" id="skills4Doom">
+                        <div>
+                            <h1>DOOM</h1>
+                            <p>Inflicts a curse that dispels an enemy Hero and prevents an them from casting spells or
+                                using items, while taking damage over time.</p>
+                        </div>
+                        <div class="abilityValue">
+                            <p>ABILITY:&nbsp; Unit Target</p>
+                            <p>AFFECTS:&nbsp; Enemy Units</p>
+                            <p>DAMAGE TYPE:&nbsp; <span class="pure-text">Pure</span></p>
+                            <p>DURATION:&nbsp; 16.0</p>
+                            <p>DAMAGE PER SECOND:&nbsp; 30.0 / 45.0 / 60.0</p>
+                        </div>
+                    </div>
+                    <div class="heroVideo">
+                        <video autoplay="" class="heroPotrait" loop="" muted preload="auto">
+                            <source src="../video/doom.webm" type="video/webm">
+                        </video>
+                    </div>
+
+                    <h3>ABILITIES</h3>
+                    <div class="heroSkill">
+                        <img id="skill1Doom" src="../assets/doom_bringer_devour.png">
+                        <img id="skill2Doom" src="../assets/doom_bringer_scorched_earth.png">
+                        <img id="skill3Doom" src="../assets/doom_bringer_infernal_blade.png">
+                        <img id="skill4Doom" src="../assets/doom_bringer_doom.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TIMBERSAW -->
+    <div class="heroDetail" id="Timbersaw">
+        <div class="heroDescription">
+            <h1 class="title">Timbersaw</h1>
+            <p> Elusive and unpredictable, Timbersaw chops through the forest to face his foes. Unleashing an arsenal of
+                saw blades to cut enemies to pieces, he rides his chain into nearby trees and batters foes along the
+                way.</p>
+            <div class="heroTopAttributes">
+                <div class="heroStats">
+                    <p class="hp">HP:&nbsp; 680(+2.7)</p>
+                    <p class="mana">Mana:&nbsp; 351(+1.6)</p>
+                </div>
+                <div class="heroAttribute">
+                    <div class="heroAttributeSection">
+                        <img src="../assets/strength.jpg">
+                        <p>24(+3.2)</p>
+                    </div>
+                    <div class="heroAttributeSection">
+                        <img src="../assets/intelligence.jpg">
+                        <p>16(+1.6)</p>
+                    </div>
+                    <div class="heroAttributeSection">
+                        <img src="../assets/agility.jpg">
+                        <p>23(+2.7)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="heroImages">
+            <div class="skill" id="skills1Timbersaw">
+                <div>
+                    <h1>WHIRLING DEATH</h1>
+                    <p>Timbersaw whirls extremely sharp edges, damaging enemies and destroying trees around him in an
+                        area. If an enemy hero is affected,
+                        it loses some of its primary attribute for a short duration. Whirling Death will deal bonus
+                        damage per tree destroyed.</p>
+                </div>
+                <div class="abilityValue">
+                    <p>ABILITY:&nbsp; No Target</p>
+                    <p>DAMAGE TYPE:&nbsp; <span class="pure-text">Pure</span></p>
+                    <p>RADIUS:&nbsp; 325.0</p>
+                    <p>DAMAGE:&nbsp; 80.0 / 120.0 / 160.0 / 200.0</p>
+                </div>
+            </div>
+            <div class="skill" id="skills2Timbersaw">
+                <div>
+                    <h1>TIMBER CHAIN</h1>
+                    <p>Timbersaw fires a chain that embeds itself in the first tree it hits, pulling him towards it. Any
+                        enemy in the path takes damage.</p>
+                </div>
+                <div class="abilityValue">
+                    <p>ABILITY:&nbsp; Point Target</p>
+                    <p>DAMAGE TYPE:&nbsp; <span class="pure-text">Pure</span></p>
+                    <p>LATCH RANGE:&nbsp; 800.0 / 950.0 / 1100.0 / 1250.0</p>
+                    <p>RADIUS:&nbsp; 225.0</p>
+                    <p>SPEED:&nbsp; 2200.0 / 2400.0 / 2600.0 / 2800.0</p>
+                </div>
+            </div>
+            <div class="skill" id="skills3Timbersaw">
+                <div>
+                    <h1>REACTIVE ARMOR</h1>
+                    <p>Each time Timbersaw is attacked, he gains increased health regen and armor.</p>
+                </div>
+                <div class="abilityValue">
+                    <p>ABILITY:&nbsp; Passive</p>
+                    <p>BONUS ARMOR:&nbsp; 0.9 / 1.0 / 1.1 / 1.2</p>
+                    <p>BONUS HP REGEN:&nbsp; 0.7 / 0.9 / 1.1 / 1.3</p>
+                    <p>MAX STACKS:&nbsp; 6.0 / 12.0 / 18.0 / 24.0</p>
+                    <p>STACK DURATION:&nbsp; 10.0 / 12.0 / 14.0 / 16.0</p>
+                </div>
+            </div>
+            <div class="skill" id="skills4Timbersaw">
+                <div>
+                    <h1>CHAKRAM</h1>
+                    <p>Fires Timbersaw's main saw blade at the target location where it will spin in place, dealing
+                        damage in an area around it. Enemies caught in the saw blade will move more slowly for every
+                        5.0% of health missing.</p>
+                </div>
+                <div class="abilityValue">
+                    <p>ABILITY:&nbsp; Point Target</p>
+                    <p>DAMAGE TYPE:&nbsp; <span class="pure-text">Pure</span></p>
+                    <p>RADIUS:&nbsp; 200.0</p>
+                    <p>PASS DAMAGE:&nbsp; 110.0 / 155.0 / 200.0</p>
+                </div>
+            </div>
+            <div class="heroVideo">
+                <video autoplay="" class="heroPotrait" id="timbersawVideo" loop="" muted preload="auto">
+                    <source src="../video/timbersaw.webm" type="video/webm">
+                </video>
+            </div>
+
+            <h3>ABILITIES</h3>
+            <div class="heroSkill">
+                <img id="skill1Timbersaw" src="../assets/timbersaw_whirling_death.png">
+                <img id="skill2Timbersaw" src="../assets/timbersaw_timber_chain.png">
+                <img id="skill3Timbersaw" src="../assets/timbersaw_reactive_armor.png">
+                <img id="skill4Timbersaw" src="../assets/timbersaw_chakram.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- INVOKER -->
+    <div class="heroDetail" id="Invoker">
+        <div class="heroDescription">
+            <h1 class="title">Invoker</h1>
+            <p> With an intricate arsenal of spells at his disposal, Invoker can adapt to any battle situation. Each
+                configuration of his three spell components yields of one of ten spells, meaning he's never without a
+                way to destroy or escape his enemies.</p>
+            <div class="heroTopAttributes">
+                <div class="heroStats">
+                    <p class="hp">HP:&nbsp; 560(+2.1)</p>
+                    <p class="mana">Mana:&nbsp; 255(+0.8)</p>
+                </div>
+                <div class="heroAttribute">
+                    <div class="heroAttributeSection">
+                        <img src="../assets/strength.jpg">
+                        <p>18(+2.4)</p>
+                    </div>
+                    <div class="heroAttributeSection">
+                        <img src="../assets/intelligence.jpg">
+                        <p>14(+1.9)</p>
+                    </div>
+                    <div class="heroAttributeSection">
+                        <img src="../assets/agility.jpg">
+                        <p>15(+4.6)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="heroImages">
+            <div class="skill" id="skills1Invoker">
+                <div>
+                    <h1>QUAS</h1>
+                    <p>Allows manipulation of ice elements. Passively grants +2 Strength per level. Each Quas instance
+                        provides increased health regeneration.</p>
+                </div>
+                <div class="abilityValue">
+                    <p>ABILITY:&nbsp; No Target</p>
+                    <p>HP REGEN PER INSTANCE:&nbsp; 1.0 / 2.0 / 3.0 / 4.0 </p>
+                </div>
+            </div>
+            <div class="skill" id="skills2Invoker">
+                <div>
+                    <h1>WEX</h1>
+                    <p>Allows manipulation of storm elements. Passively grants +2 Agility per level. Each Wex instance
+                        provides increased attack speed and movement speed.</p>
+                </div>
+                <div class="abilityValue">
+                    <p>ABILITY:&nbsp; No Target</p>
+                    <p>ATTACK SPEED PER INSTANCE:&nbsp; 1.0 / 2.0 / 3.0 </p>
+                    <p>FMOVE SPEED PER INSTANCE:&nbsp; 0.8% / 1.6%</p>
+                </div>
+            </div>
+            <div class="skill" id="skills3Invoker">
+                <div>
+                    <h1>EXORT</h1>
+                    <p>Allows manipulation of fire elements. Passively grants +2 Intelligence per level. Each Exort
+                        instance provides increased attack damage.
+                    </p>
+                </div>
+                <div class="abilityValue">
+                    <p>ABILITY:&nbsp; No Target</p>
+                    <p>DAMAGE PER INSTANCE:&nbsp; 2.0 / 4.0 / 6.0 / 8.0 </p>
+                </div>
+            </div>
+            <div class="skill" id="skills4Invoker">
+                <div>
+                    <h1>INVOKE</h1>
+                    <p>Combines the properties of the elements currently being manipulated to create a new spell for
+                        Invoker to use. Invoke cooldown is reduced by 0.3 seconds for each orb level. </p>
+                </div>
+                <div class="abilityValue">
+                    <p>ABILITY:&nbsp; No Target</p>
+                    <p>MAX SPELLS:&nbsp; 2.0</p>
+                </div>
+            </div>
+            <div class="heroVideo">
+                <video autoplay="" class="heroPotrait" loop="" muted preload="auto">
+                    <source src="../video/invoker.webm" type="video/webm">
+                </video>
+            </div>
+
+            <h3>ABILITIES</h3>
+            <div class="heroSkill">
+                <img id="skill1Invoker" src="../assets/invoker_quas.png">
+                <img id="skill2Invoker" src="../assets/invoker_wex.png">
+                <img id="skill3Invoker" src="../assets/invoker_exort.png">
+                <img id="skill4Invoker" src="../assets/invoker_invoke.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- SPECTRE -->
+    <div class="heroDetail" id="Spectre">
+        <div class="heroDescription">
+            <h1 class="title">Spectre</h1>
+            <p> Spectre haunts her enemies wherever they may be. Able to destroy lone prey with ease, she spreads her
+                presence throughout
+                the battlefield to choose her target. Once she has gathered her strength, none can escape her terrible
+                wrath.</p>
+            <div class="heroTopAttributes">
+                <div class="heroStats">
+                    <p class="hp">HP:&nbsp; 660(+3.8)</p>
+                    <p class="mana">Mana:&nbsp; 267(+0.8)</p>
+                </div>
+                <div class="heroAttribute">
+                    <div class="heroAttributeSection">
+                        <img src="../assets/strength.jpg">
+                        <p>23(+2.5)</p>
+                    </div>
+                    <div class="heroAttributeSection">
+                        <img src="../assets/intelligence.jpg">
+                        <p>23(+2.1)</p>
+                    </div>
+                    <div class="heroAttributeSection">
+                        <img src="../assets/agility.jpg">
+                        <p>16(+1.9)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="heroImages">
+            <div class="skill" id="skills1Spectre">
+                <div>
+                    <h1>SPECTRAL DAGGER</h1>
+                    <p>Spectre flings a dagger to draw a Shadow Path, dealing damage and slowing the movement speed of
+                        any enemies along the trail.
+                        Units hit by the dagger also trail a Shadow Path. While treading the path, Spectre phases
+                        through otherwise impassable terrain.</p>
+                </div>
+                <div class="abilityValue">
+                    <p>ABILITY:&nbsp; Unit Target</p>
+                    <p>AFFECTS:&nbsp; Enemy Heroes</p>
+                    <p>DAMAGE TYPE:&nbsp; <span class="magical-text">Magical</span></p>
+                </div>
+            </div>
+            <div class="skill" id="skills2Spectre">
+                <div>
+                    <h1>DESOLATE</h1>
+                    <p>Deals bonus damage whenever Spectre attacks an enemy that does not have any allied units within a
+                        400.0 radius around them.</p>
+                </div>
+                <div class="abilityValue">
+                    <p>ABILITY:&nbsp; Passive</p>
+                    <p>DAMAGE TYPE:&nbsp; <span class="pure-text">Pure</span></p>
+                    <p>BONUS DAMAGE:&nbsp; 21.0 / 34.0 / 47.0 / 60.0</p>
+                    <p>RADIUS:&nbsp; 400.0</p>
+                </div>
+            </div>
+            <div class="skill" id="skills3Spectre">
+                <div>
+                    <h1>DISPERSION</h1>
+                    <p>Damage done to Spectre is reflected on her enemies, leaving her unharmed. The effect lessens with
+                        distance. </p>
+                </div>
+                <div class="abilityValue">
+                    <p>ABILITY:&nbsp; Passive</p>
+                    <p>DAMAGE REFLECTED:&nbsp; 8.0% / 12.0% / 16.0%</p>
+                    <p>MIN RADIUS:&nbsp; 300.0</p>
+                    <p>MAX RADIUS:&nbsp; 700.0</p>
+                </div>
+            </div>
+            <div class="skill" id="skills4Spectre">
+                <div>
+                    <h1>HAUNT</h1>
+                    <p>Creates a spectral nemesis to attack each enemy hero. At any moment during the duration, Spectre
+                        can use Reality to exchange places of a given haunt.</p>
+                </div>
+                <div class="abilityValue">
+                    <p>ABILITY:&nbsp; No Target</p>
+                    <p>HAUNT DURATION:&nbsp; 5.0 / 6.0 / 7.0</p>
+                    <p>HAUNT DAMAGE:&nbsp; 40.0% / 60.0% / 80.0%</p>
+                    <p>HAUNT DAMAGE TAKEN:&nbsp; 200.0%</p>
+                </div>
+            </div>
+            <div class="heroVideo">
+                <video autoplay="" class="heroPotrait" loop="" muted preload="auto">
+                    <source src="../video/spectre.webm" type="video/webm">
+                </video>
+            </div>
+
+            <h3>ABILITIES</h3>
+            <div class="heroSkill">
+                <img id="skill1Spectre" src="../assets/spectre_spectral_dagger.png">
+                <img id="skill2Spectre" src="../assets/spectre_desolate.png">
+                <img id="skill3Spectre" src="../assets/spectre_dispersion.png">
+                <img id="skill4Spectre" src="../assets/spectre_haunt.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer-area">
+        <div class="footer-sep"></div>
+        <div class="footer-wrapper">
+            <div class="footer-content footer-left">
+                <div class="footer-logo">
+                    <img src="../assets/logo.png">
+                </div>
+                <div class="socmed-icons">
+                    <a href="https://www.facebook.com" target=" _blank" rel="noopener noreferrer"
+                        class="fb fab fa-facebook">
+                    </a>
+                    <a href="https://www.instagram.com" target=" _blank" rel="noopener noreferrer"
+                        class="ig fab fa-instagram">
+                    </a>
+                    <a href="https://www.twitter.com" target=" _blank" rel="noopener noreferrer"
+                        class="tw fab fa-twitter">
+                    </a>
+                    <a href="https://www.snapchat.com" target=" _blank" rel="noopener noreferrer"
+                        class="sn fab fa-snapchat">
+                    </a>
+                    <a href="https://www.youtube.com" target=" _blank" rel="noopener noreferrer"
+                        class="yt fab fa-youtube">
+                    </a>
+                    <a href="https://store.steampowered.com" target=" _blank" rel="noopener noreferrer"
+                        class="st fab fa-steam">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-content footer-right">
+                <div>
+                    <span onclick="console.log('Clicked');">ABOUT</span>
+                    <span onclick="console.log('Clicked');">PRIVACY</span>
+                    <span onclick="console.log('Clicked');">CONTACT</span>
+                </div>
+                <div class="creator-credit">&copy;2022 All Right Reserved<br>
+                    Developed by Celine Paulsaeman n' Steffi Tania
+                </div>
+            </div>
+        </div>
+        <div class="disclaimer">NOKA3 IS NOT AFFILIATED, AUTHORIZED, LICENSED, OR ENDORSED BY DOTA 2 OR
+            VALVE CORPORATION. ANY ASSOCIATED LOGOS ARE TRADEMARKS OF VALVE CORPORATION.
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

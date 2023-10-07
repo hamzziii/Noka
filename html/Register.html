@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoKa 3 | Register</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/logo.png">
+  <!-- Link css -->
+  <link rel="stylesheet" href="../css/Register.css">
+  <link rel="stylesheet" href="../css/NAVBAR.css">
+  <!-- Link Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- Link Icon -->
+  <script src="https://kit.fontawesome.com/4dad1e0fea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="sticky">
+    <!-- NAVBAR -->
+    <div class="NavigationBar">
+
+      <!-- SideBar -->
+      <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+        <a href="index.html">Home</a>
+        <a href="Heroes.html">Heroes</a>
+        <a href="Esport.html">E-Sport</a>
+        <a href="News.html">News</a>
+        <a href="Register.html">Register Now</a>
+      </div>
+
+      <!-- Burger -->
+      <div id="main">
+        <button class="Open" onclick="openSidebar()">☰</button>
+      </div>
+
+      <!-- Header -->
+      <div class="nav Navigation">
+        <a id="LOGO" class="black">NoKa 3</a>
+        <a href="index.html" id="home" class="option black">Home</a>
+        <!-- DropDown -->
+        <div class="dropdown">
+          <div class="DropButton">
+            <p class="black">Discover <i class="fa-solid fa-sort-down"></i></p>
+          </div>
+          <div class="content">
+            <ul><a href="heroes.html">Heroes</a></ul>
+            <ul><a href="ESport.html">E-Sport</a></ul>
+            <ul><a href="News.html">News</a></ul>
+          </div>
+        </div>
+        <a href="Register.html" class="register black"><button>Register Now</button></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <div class="container">
+    <!-- Welcome Message -->
+    <div id="content1">
+      <h1> GET STARTED</h1>
+      <h1 id="Create">Create Account to Play</h1>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="content2">
+      <form action="#" id="RegisterForm" method="post">
+        <div id="RegisBox" class="regis-box">
+          <div class="heading">
+            <h1 id="Register">Register</h1>
+          </div>
+          <br><br>
+  
+        <div class="textbox">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="nama" placeholder="Name">
+          <small></small>
+        </div><br>
+        
+        <div class="textbox">
+          <i class="fa-solid fa-venus-mars"></i>
+          <input type="text" id="Gender" placeholder="Gender" list="Kelamin">
+          <datalist id="Kelamin">
+            <option value="Male"></option>
+            <option value="Female"></option>
+          </datalist>
+          <small></small>
+        </div><br>  
+
+        <div class="textbox">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="text" id="email" placeholder="E-mail">
+          <small></small>
+        </div><br>
+
+        <div class="textbox">
+          <i class="fa-solid fa-lock icon"></i>
+          <input type="password" id="Pass" class="password" placeholder="Password" >
+          <small></small>
+        </div><br>
+
+        <div class="textbox">
+          <i class="fa-solid fa-lock icon"></i>
+          <input type="password" id="ConfirmPass" class="password" placeholder="Password Confirmation" >
+          <small></small>
+        </div><br>
+        
+        <div class="check">
+            <input type="checkbox" id="Agree">
+            <label for="terms" class="text">I agree to the terms & conditions</label>
+            <small></small>
+        </div><br><br>
+        
+          <input type="submit" class="button" value="Sign Up">
+
+      </div>
+      </form>
+    
+    </div>
+  </div>
+
+  <!-- LINK JS -->
+  <script src="../script/validation.js"></script>
+  <script src="../script/Register.js"></script>
+  <script defer src="../script/NAVBAR.js"></script>
+</body>
+
+</html>
